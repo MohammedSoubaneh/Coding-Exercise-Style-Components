@@ -2,13 +2,6 @@ import React, { useRef, useEffect, useCallback} from 'react'
 import SampleVideoSound from '../Assets/samplevideo-16x9-sound.mp4'
 import exitButton from '../Assets/exitBtn.png'
 import {Background, VideoContainer, Starwars, Close} from '../Styles/ModalStyles';
-import {
-    TextOverlay, 
-    HeroText, 
-    CenterPosition, 
-    SeeHow, 
-    PlayButton, 
-    Text} from '../Styles/TextOverlayStyles';
 
 
 export const Modal = ({ showVideo, setShowVideo, getClosedTimeStamp, transitionVideo}) => {
@@ -43,15 +36,6 @@ export const Modal = ({ showVideo, setShowVideo, getClosedTimeStamp, transitionV
       );
     return (
         <>
-        <TextOverlay>
-          <HeroText>Lorem ipsum dolor ismet</HeroText>
-          <CenterPosition>
-            <SeeHow onClick={transitionVideo}>
-              <Text>SEE HOW</Text>
-              <PlayButton />
-            </SeeHow>
-          </CenterPosition>
-        </TextOverlay> 
         {showVideo ? (
         <Background onClick={closeModal} ref={modalRef}>
             <Close onClick={transitionVideo} src={exitButton} style={{width: '2.5rem'}} />

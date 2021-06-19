@@ -2,108 +2,58 @@ import styled from 'styled-components';
 import {BreakPoint} from './BreakPoints'
 
 export const FooterRow = styled.div`
-  grid-column: 1 / 24;
-  grid-row: 17;
-  display: grid;
-  grid-template-columns: repeat(23, 1fr);
-  ${BreakPoint.laptop} {
-    grid-row: 13;
-}
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  margin: 0px;
 `;
 
 export const Approval = styled.div`
-  grid-column: 9 / 11;
-  display: flex;
-  ${BreakPoint.laptopL} {
-    grid-column: 7 / 11;   
-  }
-  ${BreakPoint.tablet} {
-    grid-column: 7 / 12;
-  }
-  ${BreakPoint.mobileL} {
-    grid-column: 6 / 12;
-  }
-  ${BreakPoint.mobileM} {
-    grid-column: 3 / 12;
-  }
+
 `;
 
 export const Certified = styled.div`
-  grid-column: 13 / 17;
-  display: flex;
-  ${BreakPoint.laptop} {
-  grid-column: 14 / 23;   
-  }
-  ${BreakPoint.mobileM} {
-  grid-column: 12 / 24;
-  }
+
 `;
 
 export const DoctorImage = styled.img`
-  width: 3vw;
+  width: 40px;
   height: auto;
-  margin-right: 20px;
-  ${BreakPoint.laptopL} {
-    width: 3vw;
-  }
-  ${BreakPoint.laptop} {
-    width: 7vw;
-  }
-  ${BreakPoint.tablet} {
-    width: 10vw;
-  }
-  ${BreakPoint.mobileL} {
-    width: 8vw;
-  }
+  margin-right: 15px;
   ${BreakPoint.mobileM} {
-    width: 10vw;
+    width: 35px;
+    height: auto;
   }
   ${BreakPoint.mobileS} {
     margin-right: 10px;
-    width: 10vw;
   }
 `;
 
 export const Logo = styled.img`
-  width: 3vw;
+  width: 50px;
+  margin-right: 15px;
+  margin-left: 20px;
   height: auto;
-  margin-right: 20px;
-  ${BreakPoint.laptopL} {
-    width: 4vw;
-  }
-  ${BreakPoint.laptop} {
-    width: 6vw;
-  }
-  ${BreakPoint.tablet} {
-    width: 9vw;
-  }
-  
-  ${BreakPoint.mobileL} {
-    width: 9vw;
-  }
   ${BreakPoint.mobileM} {
-    width: 11vw;
+    width: 40px;
+  }
+  ${BreakPoint.mobileS} {
+    margin-left: 20px;
     margin-right: 10px;
   }
 `;
 
 export const Text = styled.p`
-  font-size: 0.75vw;
-  position: relative;
-  bottom: 0.5rem;
-  ${BreakPoint.laptopL} {
-    font-size: 1vw;
-  }
-  ${BreakPoint.laptop} {
-    font-size: 1.5vw;
-  }
-  ${BreakPoint.tablet} {
-    font-size: 2vw;
-  }
+  font-size: 15px;
+  margin-right: 40px;
   ${BreakPoint.mobileM} {
-    font-size: 3vw;
+    font-size: 12px;
+    margin-right: 10px;
   }
   ${BreakPoint.mobileS} {
-    font-size: 4vw;
+    margin-right: 0;
   }
 `;

@@ -2,24 +2,35 @@ import styled from 'styled-components';
 import { BreakPoint } from './BreakPoints';
 
 export const HeroWarapper = styled.div`
-  grid-column: 2 / 23;
-  grid-row: 2 / span 14;
-  border-radius: 30px;
-  ${BreakPoint.mobileM} {
-    grid-row: 4 / span 11;
-  }
+  width:100%; 
+  max-width:1280px; 
+  margin: 25px; 
+  display: block; 
+  position: relative;
 `;
 
 export const Video = styled.video`
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
   border-radius: 30px;
-  overflow: hidden;
-  ${BreakPoint.laptop} {
-    height: 75%;
+  max-width: 1280px;
+  display: block;
+  margin: 0 auto;
+  filter: brightness(50%);
+  ${BreakPoint.desktop} {
+    width: 100%;
+    height: auto;
 }
   ${BreakPoint.mobileM} {
+    display: none; 
+  }
+`;
+
+export const SmallerVideo = styled.video` 
+  display: none;
+  filter: brightness(50%);
+  ${BreakPoint.mobileM} {
     border-radius: 10px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
   }
 `;

@@ -9,12 +9,12 @@ function Footer() {
         <FooterRow>
           <Approval>
           <DoctorImage src={doctor} />
-          <Text>PHYSICAN APPROVAL</Text>
           </Approval>
+          <Text>PHYSICAN<br/> APPROVAL</Text>
           <Certified>
             <Logo src={logo}/>
-            <Text>CLIA CERTIFIED<br/> FERTILITY REPORT</Text>
           </Certified>
+          <Text>CLIA CERTIFIED<br/> FERTILITY REPORT</Text>
         </FooterRow>   
         </>
     )

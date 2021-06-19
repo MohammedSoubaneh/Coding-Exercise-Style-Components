@@ -10,8 +10,11 @@ export default createGlobalStyle`
 `;
 
 export const InnerContainer = styled.div`
-  display: grid;
-  grid-template-columns: repeat(23, 1fr);
-  grid-auto-rows: 50px;
+  display: flex;
   font-family: 'Soleil Semibold';
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: 25px;
 `;

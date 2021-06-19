@@ -1,50 +1,40 @@
 import styled from 'styled-components';
 import {BreakPoint} from './BreakPoints';
 
-export const InnerContainer = styled.div`
-  display: grid;
-  grid-template-columns: repeat(23, 1fr);
-  grid-auto-rows: 50px;
-`;
-
 
 export const TextOverlay = styled.div`
-grid-column: 1 / 24;
-grid-row: 2 / span 14;
-margin: auto;
-width: 100%;
-z-index: 2;
-${BreakPoint.laptop} {
-    grid-row: 1 / span 14;
-}
+    position: absolute; 
+    top: 0; 
+    left: 0;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+    height: 100%;
 `;
 
 export const HeroText = styled.h1`
-text-align: center;
-color: white;
-font-size: 2.5vw;
-${BreakPoint.laptop} {
-    font-size: 3vw;
-}
+    text-align: center;
+    color: white;
+    font-size: 40px;
 ${BreakPoint.tablet} {
-    font-size: 5vw;
+    font-size: 30px;
 }
 ${BreakPoint.mobileM}{
-    font-size: 5vw;
+    font-size: 25px;
 }
 ${BreakPoint.mobileS} {
-    font-size: 6vw;
+    font-size: 20px;
 }
 `;
 
 export const CenterPosition = styled.div`
-  display: flex;
-  justify-content: center;
+
 `;
 
 
 export const PlayButton = styled.button`
-    justify-items: flex-end;
     box-sizing: border-box;
     width: auto;
     height: 10px;
@@ -54,10 +44,11 @@ export const PlayButton = styled.button`
     text-align: center;
     margin: 0;
     position: relative;
-    top: 50%;
+    top: 5px;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    background: transparent
+    background: transparent;
+    transition: all .5s ease;
 `;
 export const SeeHow = styled.div`
     text-align: center;
@@ -66,35 +57,24 @@ export const SeeHow = styled.div`
     border-style: solid;
     border-radius: 50px;
     border-width: 1px;
-    font-size: 0.75vw;
-    width: 11vw;
+    font-size: 15px;
+    width: 200px;
+    height: 50px;
     background-color: white;
     display: flex;
     justify-content: center;
+    align-items: center;
+    align-content: center;
     transition: all .5s ease;
     color: #fff;
     background-color : transparent;
-  ${BreakPoint.laptop} {
-      font-size: 1.5vw;
-      width: 20vw;
-  }
-  ${BreakPoint.mobileL} {
-      font-size: 2vw;
-      width: 25vw;
-  }
-  ${BreakPoint.mobileM} {
-      font-size: 3.5vw;
-      width: 40vw;
-  }
-  ${BreakPoint.mobileS} {
-      font-size: 4vw;
-      width: 50vw;
-  }
   &:hover {
-    color: black;
+    color: purple;
     background-color: #fff;
+    cursor: pointer;
     ${PlayButton} {
-        border-color: transparent transparent transparent black;
+        border-color: transparent transparent transparent purple;
+        cursor: pointer;
     }
   }
 `;
@@ -103,4 +83,6 @@ export const Text = styled.p`
     margin-left: 10px;
     margin-right: 10px;
     letter-spacing: 2px;
+    position: relative;
+    top: 2px;
 `;

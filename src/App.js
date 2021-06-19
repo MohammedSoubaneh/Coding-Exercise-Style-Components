@@ -1,4 +1,4 @@
-import './App.css';
+
 import {useState} from 'react';
 import {Modal} from './Components/Modal';
 import HeroSection from './Components/HeroSection';
@@ -36,7 +36,7 @@ function App() {
     <>
       <InnerContainer>
         <GlobalStyles />
-        <HeroSection />
+        <HeroSection transitionVideo={transitionVideo} />
         <Footer />
         <Modal 
         showVideo={showVideo}

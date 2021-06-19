@@ -1,9 +1,9 @@
 export const BreakPoint = {
-    mobileS: '@media screen and (max-width: 250px)',
+    mobileS: '@media screen and (max-width: 370px)',
 
-    mobileM: '@media screen and (max-width: 400px)',
+    mobileM: '@media screen and (max-width: 485px)',
 
-    mobileL: '@media screen and (max-width: 550px)',
+    mobileL: '@media screen and (max-width: 525px)',
 
     tablet: '@media screen and (max-width: 700px)',
 
@@ -11,5 +11,5 @@ export const BreakPoint = {
 
     laptopL: '@media screen and (max-width: 1440px)',
 
-    desktop: '1920px'
+    desktop: '@media screen and (max-width: 1920px)'
 }
