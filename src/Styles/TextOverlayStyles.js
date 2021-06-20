@@ -77,6 +77,16 @@ export const SeeHow = styled.div`
         cursor: pointer;
     }
   }
+  ${BreakPoint.tablet} {
+    font-size: 12px;
+    height: 40px;
+    width: 170px;
+}
+  ${BreakPoint.mobileM} {
+      height: 40px;
+      width: 170px;
+      font-size: 12px;
+  }
 `;
 
 export const Text = styled.p`
