@@ -53,4 +53,7 @@ export const Close = styled.div`
     &:after {
         transform: rotate(-45deg);
     }
+    ${BreakPoint.mobileM} {
+        bottom: 10%;
+    }
 `;
