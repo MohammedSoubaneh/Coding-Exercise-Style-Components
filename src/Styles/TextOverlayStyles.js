@@ -18,15 +18,15 @@ export const HeroText = styled.h1`
     text-align: center;
     color: white;
     font-size: 40px;
-${BreakPoint.tablet} {
-    font-size: 30px;
-}
-${BreakPoint.mobileM}{
-    font-size: 25px;
-}
-${BreakPoint.mobileS} {
-    font-size: 20px;
-}
+    ${BreakPoint.tablet} {
+        font-size: 30px;
+    }
+    ${BreakPoint.mobileM}{
+        font-size: 25px;
+    }
+    ${BreakPoint.mobileS} {
+        font-size: 20px;
+    }
 `;
 
 export const CenterPosition = styled.div`
